@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	<style>
+body {
+		height: 100%;
+		background-color: $blue-300;
+	}	
+
+	h1 {
+		color: white;
+		text-align: center;
+	}
+
+	.form-signup {
+            max-width: 330px;
+			padding: 1rem;
+	}
+
+	.form-signup .form-floating:focus-within {
+		    z-index: 2;
+	}
+
+	.form-signup input[type="username"] {
+            margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+	}
+	.form-signup input[type="password"] {
+		    margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+	}
+
+	p {
+		font-family: arial;
+		font-size: 25px;
+		text-align: center
+	}
+</style>
+</head>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Admin Signup Page</h1>
+    <form action="http://localhost:5000/login" method="post">
+        <p> Username                         <input tupe="text" name="snm" /></p>
+        <p> Password                         <input tupe="password" name="spw" /></p>
+		<p> Confirm Password                 <input tupe="password" name="scpw" /></p>
+		<p><input type="submit" value="Signup"></p>
+	</form>
+<p>Already Have an account ? <a href="http://localhost:5000/signup" style="..."><em>Login</em></a></p>
+</body>
+</html>

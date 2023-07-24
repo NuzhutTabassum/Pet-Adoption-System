@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Login Form</title>
+<style>
+body {
+		height: 100%;
+		background-color: $blue-400;
+	}	
+
+	h1 {
+		color: white;
+		text-align: center;
+	}
+
+	.form-login {
+            max-width: 330px;
+			padding: 1rem;
+	}
+
+	.form-login .form-floating:focus-within {
+		    z-index: 2;
+	
+	}
+
+	.form-login input[type="username"] {
+            margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+	}
+	.form-login input[type="password"] {
+		    margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+	}
+	
+	p {
+		font-family: arial;
+		font-size: 25px;
+		text-align: center
+	}
+</style>	
+</head>
+<body>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<h1> Volunteer Login Page </h1>
+    <form action="http://localhost:5000/login" method="post">
+
+		<p title="Enter the 'username'">Username <input type="text" name="nm" /></p>
+		<p title="Enter the 'password'">Password <input type="password" name="pw" /></p>
+        <p><input type="submit" value="Login"></p>
+	</form>
+<p>Don't Have an account ? <a href="http://localhost:5000/signup" style="..."><em>Register</em></a></p>
+</body>
+</html>	
