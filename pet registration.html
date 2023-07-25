@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Registration</title>
+
+    <style>
+        body {
+           height: 100%;
+		background-color: $blue-200;
+        }	
+    
+       	h1 {
+		color: white;
+		text-align: center;
+	    }
+
+	.form-pet-registration {
+            max-width: 330px;
+			padding: 1rem;
+	    }
+
+	.form-pet-registrarion .form-floating:focus-within {
+		    z-index: 2;
+	    }
+
+        p {
+            font-family: arial;
+            font-size: 25px;
+            text-align: center
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Pet Registration</h1>
+        <form wire:submit.prevent="submit">
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" wire:model="name">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category" wire:model="category">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="bird">Bird</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estimatedAge"> Age</label>
+                <input type="number" class="form-control" id="estimatedAge" wire:model="estimatedAge">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="number" class="form-control" id="weight" wire:model="weight">
+            </div>
+            <div class="form-group">
+                <label for="Rescuebackground"> Rescue_Background </label>
+                <input textarea.class="form-control" id="Rescuebackground" wire:model="Rescuebackground">
+            </div>   
+            
+
+        <p><input type="submit" value="Submit"></p>   
+        </form>
+</body>              

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Information</title>
+
+    <style>
+        body {
+           height: 100%;
+		background-color: $blue-200;
+        }	
+    
+      	h1 {
+		color: white;
+		text-align: center;
+	    }
+
+	.form-signup {
+            max-width: 330px;
+			padding: 1rem;
+	    }
+
+	.form-signup .form-floating:focus-within {
+		    z-index: 2;
+	    }
+    
+        p {
+            font-family: arial;
+            font-size: 25px;
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Medical Info</h1>
+        <form wire:submit.prevent="submit">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" wire:model="name">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Breed</label>
+                <input type="text" class="form-control" id="name" wire:model="name">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category" wire:model="category">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="bird">Bird</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estimatedAge">Estimated Age</label>
+                <input type="number" class="form-control" id="estimatedAge" wire:model="estimatedAge">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="number" class="form-control" id="weight" wire:model="weight">
+            </div>
+            <div class="form-group">
+                <label for="rescueBackground">Health Issues</label>
+                <input textarea.class="form-control" id="rescueBackground" wire:model="rescueBackground">
+            </div>
+         <p><input type="submit" value="Submit"></p>   
+     </form>
+</body>   
